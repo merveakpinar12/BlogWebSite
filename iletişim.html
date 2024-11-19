@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merve-Blog</title>
+    <link rel="stylesheet" href="./iletişim.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <section class="header">
+        <nav class="header_logo"> 
+            <div class="m_logo" href="">
+                <img src="./assets/images/m_logo.png">
+            </div> 
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+                <i class="fas fa-bars"></i> 
+            </label>
+                <ul class="menu">
+                    <a href="/">Ana Sayfa</a>
+                    <a href="/blog.html">Blog</a>
+                    <a href="/portföy.html">Portföy</a>
+                    <a href="/iletişim.html">İletişim</a>
+                    <label for="chk" class="hide-menu-btn">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </ul>
+        </nav>
+    </section>
+
+    <section class="contact">
+        <div class="title">
+            <h1>İletişim</h1>
+        </div>
+        <div class="image"><img src="./assets/images/iletişim.webp"></div>
+    </section>
+    
+    <section id="contact_area">
+        <div class="contact_area_body">
+            <div class="contact_area_left">
+                <h1 class="title">Mesaj Gönder</h1>
+                <p>İster yeni fikirleri tartışmak için, ister benim için bir projeniz olsun bu formu doldurmanız yeterlidir.</p>
+                <div class="contact-element">
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:"></a>
+                </div>
+                <div class="social-media">
+                    <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>    
+            </div>
+            <div class="contact_right">               
+                <form action="" method="post">
+                    <input type="text" name="text" id="text" placeholder="İsim">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <textarea name="message" id="message" rows="10" placeholder="Mesaj"></textarea>
+                    <button>GÖNDER</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body> 
+</html>

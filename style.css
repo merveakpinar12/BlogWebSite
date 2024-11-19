@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    color: #fff; 
+    background-image:url(assets/images/showcase.svg),linear-gradient(-45deg, rgb(139, 45, 8), rgb(89, 5, 60), rgb(61, 33, 107),rgb(173, 12, 122));
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+}
+.header_logo{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.isim_logo{
+    font-family: "Brush Script MT", cursive;
+    font-size:xx-large ;
+    cursor: pointer; 
+    font-weight: 90; 
+}
+.links{
+    flex: 1;
+    text-align: right;
+}
+.links ul li{
+    list-style: none;
+    font-family: serif;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #8b2d08 ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.links ul li:hover::after{
+    width: 100%;
+}
+.iletişim a {
+    color: #fff;
+    position: absolute;
+    top:95%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;       
+}
+.show-menu-btn, .hide-menu-btn{
+    transition: 0.5s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-menu-btn{
+    float: right;
+}
+.show-menu-btn i{
+    line-height: 100%;
+    padding: 30px 0;
+}
+.iletişim a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+    color: #8b2d08; 
+}
+.iletişim a:hover{
+    border: 1px solid #861f86;  
+}
+#chk{
+    position: absolute;
+    visibility: hidden;
+}
+.avatarlar{
+    min-height: 100vh;
+    width: 100%;
+}
+.avatar{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+    list-style: none;
+}
+.avatarlar .avatar a{
+    font-family: "Brush Script MT", cursive;
+    font-size:42px;
+    cursor: pointer; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    color: #861f86;
+    font-style: italic;
+}
+.avatarlar .avatar a img{
+    margin-left: 30%;
+}
+.avatarlar .avatar a h4{
+    margin-right: 30%;
+}
+.social-media{
+    width: 50%;
+    height: 8vh;
+    position: absolute;
+    left: 45%;
+    top: 260vh;
+}
+.social-media .icons{
+    display: inline; 
+}
+.social-media .icons a{
+    display: inline-flex;
+    width: 25px;
+    color: black;
+    text-decoration: none;
+}
+@media screen and (max-width:900px){
+    .show-menu-btn, .hide-menu-btn{
+        display: block;
+    }
+    .isim_logo{
+        padding: 0px 2px;
+    }
+    .links{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #545252;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0; 
+        text-transform: uppercase;
+        line-height: normal;
+        transition: 0.7s;   
+    }
+    .links ul li {
+        display: block;
+        padding: 20px;
+    }
+    .links ul li a:hover{
+        color: #8b2d08; 
+    }
+    .links ul li:hover::after{
+        width: 0%;
+    }
+    .hide-menu-btn{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    .iletişim{
+        display: none;
+    }
+    #chk:checked~.links{
+        right: 0;
+    }
+}
